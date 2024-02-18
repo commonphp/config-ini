@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace CommonPHP\Tests\Drivers\IniConfigurationDriver;
 
 use CommonPHP\Configuration\Drivers\IniConfigurationDriver\IniConfigurationDriver;
