@@ -1,31 +1,25 @@
 {
   "name": "comphp/config-ini",
   "type": "library",
-  "description": "Provides functionality necessary for working with INI configuration files",
+  "description": "Configuration Driver for CommonPHP which encodes/decodes the INI format",
   "license": "MIT",
-  "authors": [
-    {
-      "name": "timothy.mcclatchey",
-      "email": "timothy@commonphp.org"
-    }
-  ],
+  "version": "0.3",
   "autoload": {
     "psr-4": {
-      "CommonPHP\\Configuration\\Drivers\\IniConfigurationDriver\\": "src/"
+      "CommonPHP\\Drivers\\Config\\INI\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "CommonPHP\\Tests\\Drivers\\IniConfigurationDriver\\": "tests/"
+      "CommonPHP\\Drivers\\Config\\INI\\Tests\\": "tests/"
     }
   },
   "require": {
-    "php": "^8.3",
-    "comphp/config": "^0.1"
+    "php": "^8.5",
+    "comphp/config": "^0.3"
   },
   "require-dev": {
-    "phpunit/phpunit": "^10.5.9",
-    "phpstan/phpstan": "^1.10.58",
-    "phpmd/phpmd": "^2.13"
+    "phpunit/phpunit": "^13.1",
+    "friendsofphp/php-cs-fixer": "^3.95"
   }
 }
